@@ -1,0 +1,26 @@
+.Todo {
+  &-item {
+    margin-top: 2px;
+    user-select: none;
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    &:first-child {
+      margin-top: 10px;
+    }
+
+    & > span.completed {
+      color: red;
+      text-decoration: line-through;
+    }
+  }
+}
+
+button.toggle-completed {
+  color: green;
+  &.hidden {
+    color: red;
+  }
+}
